@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="container" class="container">
+        <header>
+            <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a class="href-1" href="#" onclick="showContent('car')">Car</a></li>
+                    <li><a class="href-1" href="#" onclick="showContent('bike')">Bike</a></li>
+                    <li><a class="href-1" href="#" onclick="showContent('offroad')">Offroad</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div id="carContent" class="content">
+                <div class="div-car1">
+                    <img src="imgs/panto.png" class="bike-png">
+                    <p class="p-bike">panto-3</p>
+                    <button id="car-1" class="rent-3">Rent</button>
+                </div>
+                <div class="div-car2">
+                    <img src="imgs/panto.png" class="bike-png">
+                    <p class="p-bike">panto-1</p>
+                    <button id="car-2" class="rent-3">Rent</button>
+                </div>
+                <div class="div-car3">
+                    <img src="imgs/panto.png" class="bike-png">
+                    <p class="p-bike">panto-2</p>
+                    <button id="car-3" class="rent-3">Rent</button>
+                </div>
+            </div>
+            
+            <div id="bikeContent" class="content">
+                <div class="div-bike">
+                    <img src="imgs/surron.png" class="bike-png">
+                    <p class="p-bike">bike</p>
+                    <button id="bike-1" class="rent-3">Rent</button>
+                </div>
+                <div class="div-bike2">
+                    <img src="imgs/surron.png" class="bike-png">
+                    <p class="p-bike">bike-2</p>
+                    <button id="bike-2" class="rent-3">Rent</button>
+                </div>
+                <div class="div-bike3">
+                    <img src="imgs/surron.png" class="bike-png">
+                    <p class="p-bike">bike-3</p>
+                    <button id="bike-3" class="rent-3">Rent</button>
+                </div>
+            </div>
+            
+            <div id="offroadContent" class="content">
+                <div class="div-1">
+                <img src="imgs/surron.png" class="surron-png">
+                <p class="p-1">Surron Lightbee</p>
+                <button id="offroad-1" class="rent-1">Rent</button>
+            </div>
+            <div class="div-3">
+                <img src="imgs/surron.png" class="surron-png">
+                <p class="p-1">Surron -2</p>
+                <button id="offroad-2" class="rent-1">Rent</button>
+            </div>
+            <div class="div-4">
+                <img src="imgs/surron.png" class="surron-png">
+                <p class="p-1">Surron -3</p>
+                <button id="offroad-3" class="rent-1">Rent</button>
+            </div>
+            </div>
+        </header>
+        <script>
+        function showContent(contentId) {
+        document.querySelectorAll('.content').forEach(content => {
+    content.style.display = 'none';
+    });
+    
+    document.getElementById(`${contentId}Content`).style.display = 'block';
+}
+
+        </script>
+        <script src="./index.js" type="text/javascript"></script>
+    </div>
+    </body>
+</html>
